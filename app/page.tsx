@@ -13,7 +13,6 @@ export default function Home() {
         <Skills></Skills>
         <Encryption></Encryption>
         <Projects></Projects>
-        <Footer></Footer>
       </div>
     </main>
   );

@@ -37,7 +37,7 @@ const Footer = () => {
               <a href="#" className="text-2xl">
                 <FaTwitter />
               </a>
-              <a href="https://www.facebook.com/rahathasan.coder" className="text-2xl">
+              <a href="#" className="text-2xl">
                 <FaLinkedin />
               </a>
               <a href="#" className="text-2xl">

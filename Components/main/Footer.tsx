@@ -1,74 +1,105 @@
 import React from "react";
 import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
-
-import { FaYoutube } from "react-icons/fa";
+  FaYoutube,
+  FaGithub,
+  FaDiscord,
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-                
-
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Community</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Youtube</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Github</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Discord</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Social Media</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Instagram</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                     
-                        <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                      
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                  
-                        <span className="text-[15px] ml-[6px]">mifwebchain@gmail.com</span>    
-                    </p>
-                </div>
+    <footer id="about-me" className="bg-transparent text-gray-300 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Connect with me section */}
+          <div className="flex flex-col justify-center items-center md:items-start">
+            <h2 className="text-xl font-bold mb-6">Connect with me</h2>
+            <div className="flex gap-4 mb-12">
+              <a href="#" className="text-2xl">
+                <FaYoutube />
+              </a>
+              <a href="#" className="text-2xl">
+                <FaGithub />
+              </a>
+              <a href="#" className="text-2xl">
+                <FaDiscord />
+              </a>
+              <a
+                href="#"
+                className="text-2xl"
+              >
+                <FaFacebook />
+              </a>
+              <a href="#" className="text-2xl">
+                <FaTwitter />
+              </a>
+              <a href="#" className="text-2xl">
+                <FaLinkedin />
+              </a>
+              <a href="#" className="text-2xl">
+                <FaInstagram />
+              </a>
             </div>
-
-            <div className="mb-[20px] text-[15px] text-center">
-                &copy; WebChain Dev 2023 Inc. All rights reserved
+            <h2 className="text-xl font-bold mb-4">Here's My Email :</h2>
+            <div className="flex items-center">
+              <FaEnvelope className="mr-2" />
+              <a
+                href="mailto:rahathasan2987@gmail.com"
+                className="hover:text-white"
+              >
+                rahathasan2987@gmail.com
+              </a>
             </div>
+          </div>
+
+          {/* Our Community section */}
+          <div>
+            <h2 className="text-xl font-bold mb-4">Our Community</h2>
+            <div className="grid grid-cols-1 gap-4 mb-4">
+              <a href="#" className="flex items-center text-lg">
+                <FaYoutube className="mr-2 text-sm" />
+                Youtube 
+              </a>
+              <a href="#" className="flex items-center text-lg">
+                <FaGithub className="mr-2 text-sm" />
+                Github 
+              </a>
+              <a href="#" className="flex items-center text-lg">
+                <FaDiscord className="mr-2 text-sm" />
+                Discord 
+              </a>
+              <a href="#" className="flex items-center text-lg">
+                <FaLinkedin className="mr-2 text-sm" />
+                Linkedin 
+              </a>
+            </div>
+          </div>
+
+          {/* About section */}
+          <div>
+            <h2 className="text-xl font-bold mb-4">About</h2>
+            <p className="mb-4">
+             Welcome to our developer community!
+            </p>
+            <p className="mb-4">
+             We are a passionate group of developers dedicated to learning and growing together.
+            </p>
+          </div>
+
+          {/* Copyright section */}
+          <div className="md:col-span-3 mx-auto">
+            <p className="text-center md:text-left">
+              &copy; Design Inspired by WebChain Dev
+            </p>
+          </div>
         </div>
-    </div>
-  )
-}
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

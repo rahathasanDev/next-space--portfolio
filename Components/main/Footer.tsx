@@ -29,7 +29,7 @@ const Footer = () => {
                 <FaDiscord />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/rahathasan.coder"
                 className="text-2xl"
               >
                 <FaFacebook />
